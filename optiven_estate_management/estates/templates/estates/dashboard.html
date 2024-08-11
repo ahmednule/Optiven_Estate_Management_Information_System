@@ -1,0 +1,27 @@
+{% extends 'estates/base.html' %}
+
+{% block title %}Dashboard | Optiven Estate{% endblock %}
+
+{% block content %}
+    <h1>Orders Dashboard</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Property</th>
+                <th>Customer</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for order in orders %}
+                <tr>
+                    <td>{{ order.id }}</td>
+                    <td>{{ order.property.name }}</td>
+                    <td>{{ order.customer_name }}</td>
+                    <td>{{ order.date_ordered }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

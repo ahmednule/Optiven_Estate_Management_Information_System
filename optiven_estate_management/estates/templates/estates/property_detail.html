@@ -1,0 +1,11 @@
+{% extends 'estates/base.html' %}
+
+{% block title %}{{ property.name }} | Optiven Estate{% endblock %}
+
+{% block content %}
+    <h1>{{ property.name }}</h1>
+    <img src="{{ property.image.url }}" alt="{{ property.name }}">
+    <p>{{ property.description }}</p>
+    <p>Price: {{ property.price }} Ksh</p>
+    <a href="{% url 'order_property' property.pk %}">Order this property</a>
+{% endblock %}
