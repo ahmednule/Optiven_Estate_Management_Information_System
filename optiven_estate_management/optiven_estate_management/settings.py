@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-lfzt)jamir$5#11kz%yax&hv2weldfruexqt0cd*m0im&g)b-m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://optiven-estate-management-information.onrender.com']
 
 
 # Application definition
