@@ -27,8 +27,9 @@ SECRET_KEY = 'django-insecure-lfzt)jamir$5#11kz%yax&hv2weldfruexqt0cd*m0im&g)b-m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['optiven-estate-management-information.onrender.com','localhost', '127.0.0.1']
-CSRF_TRUSTED_ORIGINS = ['optiven-estate-management-information.onrender.com']
+ALLOWED_HOSTS = ['https://optiven-estate-management-information.onrender.com','localhost', '127.0.0.1']
+# CSRF_TRUSTED_ORIGINS = ['optiven-estate-management-information.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://optiven-estate-management-information.onrender.com']
 
 
 # Application definition
