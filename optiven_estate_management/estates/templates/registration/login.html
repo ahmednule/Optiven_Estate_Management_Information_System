@@ -1,0 +1,20 @@
+<!-- templates/registration/login.html -->
+{% extends 'estates/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+  <h2>Welcome Back</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <button type="submit">Login</button>
+  </form>
+  <p class="text-muted ml-5">Dont' have an account? <a href="{% url 'signup' %}">Sign Up in here</a>.</p>
+  <style>
+    footer{
+        bottom:0;
+        position:fixed;
+        width:100%;
+    }
+  </style>
+{% endblock %}
